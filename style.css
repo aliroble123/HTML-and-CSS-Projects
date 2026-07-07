@@ -1,0 +1,6 @@
+body{font-family:Arial,sans-serif;}
+.card img {
+    height: 450px;
+    object-fit: cover;
+}
+footer{margin-top:40px;}

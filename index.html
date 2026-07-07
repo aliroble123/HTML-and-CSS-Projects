@@ -1,26 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Pet Shop Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Academy Cinemas</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <h1>Welcome to My Pet Shop</h1>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Academy Cinemas</a>
 
-    <p>We love pets!</p>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <h2>Our Pets</h2>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#movies">Movies</a></li>
+            <li class="nav-item"><a class="nav-link" href="#showtimes">Showtimes</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
 
-    <ul>
-        <li>Dogs</li>
-        <li>Cats</li>
-        <li>Birds</li>
+<div class="jumbotron jumbotron-fluid text-center bg-primary text-white mb-0">
+    <div class="container">
+        <h1 class="display-4">Academy Cinemas</h1>
+        <p class="lead">Experience today's biggest movies.</p>
+    </div>
+</div>
+
+<div class="container my-5" id="movies">
+    <h2 class="text-center mb-4">Featured Movies</h2>
+
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="card mb-4">
+               <img src="https://picsum.photos/300/450?random=1" class="card-img-top">
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card mb-4">
+               <img src="https://picsum.photos/300/450?random=2" class="card-img-top">
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card mb-4">
+               <img src="https://picsum.photos/300/450?random=3" class="card-img-top">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container my-5" id="showtimes">
+    <h2>Showtimes</h2>
+
+    <ul class="list-group">
+        <li class="list-group-item">Movie One - 1:00 PM</li>
+        <li class="list-group-item">Movie Two - 4:00 PM</li>
+        <li class="list-group-item">Movie Three - 7:00 PM</li>
     </ul>
+</div>
 
-    <h2>Contact Us</h2>
+<div class="container my-5" id="contact">
+    <h2>Contact</h2>
 
-    <p>Email: petshop@example.com</p> 
-    <p> Added another paragraph </p>
+    <form>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Name">
+        </div>
+
+        <div class="form-group">
+            <input type="email" class="form-control" placeholder="Email">
+        </div>
+
+        <button class="btn btn-primary">Sign Up</button>
+    </form>
+</div>
+
+<footer class="bg-dark text-white text-center p-3">
+    &copy; 2026 Academy Cinemas
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
